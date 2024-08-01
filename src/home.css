@@ -5,10 +5,10 @@
     width: 100%;
     background-color: #161616;
     color: #dadada;
-    padding: 10px 0; /* Adjust padding as needed */
+    padding: 10px 0; 
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000; 
   }
 .navbar {
     position: fixed;
@@ -17,16 +17,16 @@
     width: 100%;
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000; 
   }
   
-  /* Main content area */
+  
   .main-content {
-    margin-top: 150px; /* Adjust based on the height of the navbar */
+    margin-top: 150px; 
     padding: 20px;
   }
   
-  /* Ensure the body takes up the full height and allows scrolling */
+
   body {
     top: 1000px;
     margin: 0;
