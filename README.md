@@ -43,7 +43,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
  - Stripe
  - RazorPay
  - Bootstrap
- - 
  # Overview
     ArtVista Gallery is an online platform that allows users to browse and purchase artworks. The application is built with React for the frontend, and it integrates with a Node.js and Express.js backend, using MongoDB 
    
