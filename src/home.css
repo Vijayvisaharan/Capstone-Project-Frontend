@@ -1,0 +1,36 @@
+.promo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #161616;
+    color: #dadada;
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+.navbar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  /* Main content area */
+  .main-content {
+    margin-top: 150px; /* Adjust based on the height of the navbar */
+    padding: 20px;
+  }
+  
+  /* Ensure the body takes up the full height and allows scrolling */
+  body {
+    top: 1000px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+  }
