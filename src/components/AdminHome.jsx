@@ -51,7 +51,8 @@ function AdminHome() {
         try {
             if (window.confirm('Are you sure you want to delete this art?')) {
                 await artServices.deleteArt(id); 
-                alert('Art deleted successfully!');      
+                alert('Art deleted successfully!'); 
+                setArts(arts.filter((art) => art._id !== id))     
             }
         } catch (err) {
             console.error('Error deleting art:', err);

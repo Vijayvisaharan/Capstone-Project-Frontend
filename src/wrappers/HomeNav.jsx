@@ -78,13 +78,12 @@ function HomeNav() {
 
       <Navbar bg="light" expand="lg" className="navbar-custom" style={{ backgroundColor: "#E5F1EE", height: "120px" }}>
         <Container fluid>
-        
+
           <Navbar.Brand as={Link} to="/" className="me-auto" style={{ fontSize: '4rem', fontFamily: 'Roboto, sans-serif' }}>
             <span className="navbar-title" style={{ fontFamily: 'Dancing Script, cursive', fontWeight: 'bold' }}> A r t V i s t a</span>
           </Navbar.Brand>
           {user && user.role === 'admin' && (
             <div>
-
               <Link to="/AdminDashboard/Adminhome">
                 <Button variant="danger" className="mt-2 ms-4" style={{ marginRight: '20px' }}>
                   Admin
@@ -189,12 +188,12 @@ function HomeNav() {
         <Outlet />
       </main>
       <footer className="footer">
-                        <Button variant="link">Help</Button>
-                        <Button variant="link">Shipping Policy</Button>
-                        <Button variant="link">Privacy Policy</Button>
-                        <Button variant="link">Terms of Service</Button>
-                        <Button variant="link">Contact Information</Button>
-                    </footer>
+        <Button variant="link">Help</Button>
+        <Button variant="link">Shipping Policy</Button>
+        <Button variant="link">Privacy Policy</Button>
+        <Button variant="link">Terms of Service</Button>
+        <Button variant="link">Contact Information</Button>
+      </footer>
     </>
   )
 }

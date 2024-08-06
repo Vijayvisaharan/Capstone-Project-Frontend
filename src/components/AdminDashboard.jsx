@@ -8,6 +8,7 @@ import { useState } from 'react'
 import userServices from '../services/userServices';
 import { Button, Col, Container, Nav, Navbar, Row } from 'react-bootstrap'
 import Editart from './Editart'
+import '../admin.css'
 function AdminDashboard() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -39,10 +40,11 @@ function AdminDashboard() {
 
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar className="admin-navbar" bg="light" expand="lg">
         <Container>
           <Row className="w-100 align-items-center">
             <Col>
+          
               {user && (
                 <Navbar.Brand className="me-auto " style={{ fontSize: '4rem', fontFamily: 'Roboto, sans-serif' }}>
                    <i className="bi bi-person-circle">
@@ -70,15 +72,15 @@ function AdminDashboard() {
           </Row>
         </Container>
       </Navbar>
+      <div className="admin-content"> 
       <Routes>
         <Route path="Adminhome" element={<AdminHome />} />
         <Route path="/" element={<Home />} />
         <Route path="add" element={<Addart />} />
         <Route path="edit/:id" element={<Editart />} />
       </Routes>
+      </div> 
     </div>
-
-
   )
 }
 
